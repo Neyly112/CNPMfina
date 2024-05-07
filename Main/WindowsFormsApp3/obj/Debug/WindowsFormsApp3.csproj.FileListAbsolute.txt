@@ -1,0 +1,83 @@
+E:\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+E:\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+E:\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.quenMK.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.checkCode.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.LapHopDong.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu2.resources
+E:\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu3.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.checkCode.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormNhapTinhToan.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormTongTien.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.quenMK.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu2.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu3.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormHuyHopDong.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormNewHD.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormGiaHanHD.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDieuChinhPhi.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhSuaThongTinQL.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinQuanLy.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhThongTinKH.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinKH.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhThongTinChuHO.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinChuHo.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDanhSachHopDong.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSHDCH.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormXacNhanHD.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSPhongThue.resources
+D:\Bai Tap\github\CNPM\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSBangPhi.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.checkCode.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhSuaThongTinQL.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhThongTinChuHO.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDanhSachHopDong.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDieuChinhPhi.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSBangPhi.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSHDCH.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSPhongThue.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormGiaHanHD.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormHuyHopDong.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormNewHD.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormNhapTinhToan.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormChinhThongTinKH.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinChuHo.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinKH.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormThongTinQuanLy.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormTongTien.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormXacNhanHD.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.quenMK.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu2.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.trangchu3.resources
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+D:\Bai Tap\CNPMFinal\CNPMFinal\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

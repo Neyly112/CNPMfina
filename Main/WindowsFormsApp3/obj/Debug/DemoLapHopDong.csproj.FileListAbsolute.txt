@@ -1,0 +1,22 @@
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.exe.config
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.exe
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.pdb
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.AssemblyReference.cache
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.Form1.resources
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.Properties.Resources.resources
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.GenerateResource.cache
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.CoreCompileInputs.cache
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.exe
+D:\Bai Tap\CNPM\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.pdb
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.AssemblyReference.cache
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.FormLapHopDong.resources
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.Properties.Resources.resources
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.GenerateResource.cache
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.csproj.CoreCompileInputs.cache
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.exe
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.pdb
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.exe.config
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.exe
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\bin\Debug\DemoLapHopDong.pdb
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.Form1.resources
+D:\Bai Tap\CNPM\Đồ án\DemoLapHopDong\DemoLapHopDong\obj\Debug\DemoLapHopDong.Form2.resources
