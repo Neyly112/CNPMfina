@@ -12,22 +12,25 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using DTO1;
 namespace WindowsFormsApp3
 {
     public partial class FormNewHD : Form
     {
-        string strSQL = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         string email;
         bool checkPhongThue1 = false;
         bool checkPhong1 = false;
+        string emailCH;
 
         public FormNewHD(string ma)
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
         private bool isEmail(string email)
         {
@@ -43,11 +46,34 @@ namespace WindowsFormsApp3
         {
 
         }
+        private void getMailCH()
+        {
+            if (sql == null)
+            {
+                sql = new SqlConnection(strSql);
+            }
+            if (sql.State == ConnectionState.Closed)
+            {
+                sql.Open();
+            }
+
+            SqlCommand sqlCm = new SqlCommand();
+            sqlCm.CommandType = CommandType.Text;
+            sqlCm.CommandText = "select top 1 Email from Chu_ho where MaChuHo = dbo.getTopMaCH() order by MaChuHo desc";
+            sqlCm.Connection = sql;
+            SqlDataReader reader = sqlCm.ExecuteReader();
+            while (reader.Read())
+            {
+                string tmp = reader.GetString(0);
+                emailCH = tmp;
+            }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            NguoiThue n = new NguoiThue(tbEmail.Text, tbDC.Text, tbSDT.Text, txTen.Text);
+            
+            NguoiThue n = new NguoiThue(txTen.Text.Trim(), tbDC.Text.Trim(), tbEmail.Text.Trim(), tbSDT.Text.Trim(),  "1", "1");
             if ((tbDC.Text == "") || (tbEmail.Text == "") || (tbSDT.Text == "") || (tbSNG.Text == "") || (txTen.Text == ""))
             {
                 MessageBox.Show("Không để trống ô");
@@ -56,22 +82,21 @@ namespace WindowsFormsApp3
             HopDong h = new HopDong(dateTimePickerNL.Text.ToString(), Convert.ToInt32(tbSNG.Text), dateTimePickerNKT.Text.ToString(), tbTenPhong.Text.Trim());
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
                 sql.Open();
             }
             
-            MessageBox.Show(checkPhongDaThue(tbTenPhong.Text.Trim()).ToString());
-            MessageBox.Show(checkPhong(tbTenPhong.Text.Trim()).ToString());
             if ((checkPhong(tbTenPhong.Text.Trim()) == false) || (checkPhongDaThue(tbTenPhong.Text.Trim()) == true))
             {
                 MessageBox.Show("Phòng đã cho thuê hoặc không tồn tại");
                 return;
             }
 
-            string email = n.getEmail().Trim();
+            string email = n.getEmail();
+            
             if (isEmail(email) == false)
             {
                 MessageBox.Show("Nhap sai email");
@@ -86,12 +111,14 @@ namespace WindowsFormsApp3
             funcAddKH(n.getEmail().Trim(), n.getDiaChi().Trim(), n.getSdt().Trim(), n.getTen().Trim());
             funcAddHD(h.getNgayKetThuc().Trim(), Convert.ToInt32(h.getSoNguoi()), h.getNgayLap().Trim(), h.getTenPhong());
             funcInsertPhongThueSH(h.getTenPhong());
-            getEmail();
+            getMailCH();
+            
             checkPhong(h.getTenPhong());
             
             MailMessage mail = new MailMessage();
+            MailAddress to = new MailAddress(emailCH);
             mail.From = new MailAddress("thuanminh1390@gmail.com");
-            mail.To.Add("thuanminh2123@gmail.com");
+            mail.To.Add(to);
             mail.Subject = "Hợp đồng mới";
             mail.Body = "Có hợp đồng mới cần xác nhận";
             
@@ -102,6 +129,7 @@ namespace WindowsFormsApp3
             try
             {
                 smtpClient.Send(mail);
+
             }
             catch (Exception ex)
             {
@@ -115,7 +143,7 @@ namespace WindowsFormsApp3
         {
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
@@ -123,7 +151,7 @@ namespace WindowsFormsApp3
             }
             SqlCommand sqlCm = new SqlCommand();
             sqlCm.CommandType = CommandType.Text;
-            sqlCm.CommandText = "exec insertToNguoiThue N'" + emailKH + "', N'" + dc + "','" + sdt + "', '" + TenKh + "', '1'";
+            sqlCm.CommandText = "exec insertToNguoiThue N'" + emailKH + "', N'" + dc + "','" + sdt + "', N'" + TenKh + "', '1'";
             sqlCm.Connection = sql;
             bool ok = false;
             int k = sqlCm.ExecuteNonQuery();
@@ -141,7 +169,7 @@ namespace WindowsFormsApp3
         {
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
@@ -171,7 +199,7 @@ namespace WindowsFormsApp3
         {
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
@@ -201,7 +229,7 @@ namespace WindowsFormsApp3
         {
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
@@ -224,34 +252,12 @@ namespace WindowsFormsApp3
 
         }
 
-        private void getEmail()
-        {
-            if (sql == null)
-            {
-                sql = new SqlConnection(strSQL);
-            }
-            if (sql.State == ConnectionState.Closed)
-            {
-                sql.Open();
-            }
-
-            SqlCommand sqlCm = new SqlCommand();
-            sqlCm.CommandType = CommandType.Text;
-            sqlCm.CommandText = "select top 1 * from Chu_ho order by MaChuHo desc";
-            sqlCm.Connection = sql;
-            SqlDataReader reader = sqlCm.ExecuteReader();
-            while (reader.Read())
-            {
-                email = reader.GetString(2);
-            }
-            reader.Close();
-
-        }
+        
         private void funcInsertPhongThueSH(string tenPhong)
         {
             if (sql == null)
             {
-                sql = new SqlConnection(strSQL);
+                sql = new SqlConnection(strSql);
             }
             if (sql.State == ConnectionState.Closed)
             {
@@ -296,6 +302,11 @@ namespace WindowsFormsApp3
         }
 
         private void giaHạnHợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

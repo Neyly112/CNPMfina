@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.lbTenPhong = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbTenPhong
@@ -58,6 +59,7 @@
             this.tbSoNg.Location = new System.Drawing.Point(385, 198);
             this.tbSoNg.Multiline = true;
             this.tbSoNg.Name = "tbSoNg";
+            this.tbSoNg.ReadOnly = true;
             this.tbSoNg.Size = new System.Drawing.Size(309, 39);
             this.tbSoNg.TabIndex = 19;
             // 
@@ -101,17 +103,18 @@
             this.tbTenNguoiThue.Location = new System.Drawing.Point(385, 134);
             this.tbTenNguoiThue.Multiline = true;
             this.tbTenNguoiThue.Name = "tbTenNguoiThue";
+            this.tbTenNguoiThue.ReadOnly = true;
             this.tbTenNguoiThue.Size = new System.Drawing.Size(309, 39);
             this.tbTenNguoiThue.TabIndex = 18;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(405, 399);
+            this.button1.Location = new System.Drawing.Point(310, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 54);
             this.button1.TabIndex = 25;
-            this.button1.Text = "Xác nhận";
+            this.button1.Text = "Từ chối";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -148,7 +151,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(198, 399);
+            this.btnThoat.Location = new System.Drawing.Point(132, 397);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(118, 54);
             this.btnThoat.TabIndex = 24;
@@ -166,11 +169,24 @@
             this.lbTenPhong.TabIndex = 17;
             this.lbTenPhong.Text = "Tên phòng:";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Location = new System.Drawing.Point(524, 397);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 54);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Xác nhận";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormXacNhanHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(800, 531);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.tbTenPhong);
             this.Controls.Add(this.tbSoNg);
             this.Controls.Add(this.label2);
@@ -206,5 +222,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label lbTenPhong;
+        private System.Windows.Forms.Button button2;
     }
 }

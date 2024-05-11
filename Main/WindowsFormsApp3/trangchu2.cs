@@ -67,14 +67,21 @@ namespace WindowsFormsApp3
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            FormNewHD f = new FormNewHD(ma);
+            FormDSHDNT f = new FormDSHDNT(ma);
             f.ShowDialog();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            FormNewHD f = new FormNewHD(ma);
+            FormDSHDNT f = new FormDSHDNT(ma);
+            f.ShowDialog();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            FormDSHDNT f = new FormDSHDNT(ma);
             f.ShowDialog();
             this.Hide();
         }

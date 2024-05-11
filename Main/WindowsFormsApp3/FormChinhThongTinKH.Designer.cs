@@ -45,6 +45,7 @@
             // 
             // tbMk
             // 
+            this.tbMk.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbMk.Location = new System.Drawing.Point(338, 371);
             this.tbMk.Multiline = true;
             this.tbMk.Name = "tbMk";
@@ -87,6 +88,7 @@
             // 
             // tbDiaChi
             // 
+            this.tbDiaChi.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbDiaChi.Location = new System.Drawing.Point(338, 311);
             this.tbDiaChi.Multiline = true;
             this.tbDiaChi.Name = "tbDiaChi";
@@ -96,6 +98,7 @@
             // 
             // tbEmail
             // 
+            this.tbEmail.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbEmail.Location = new System.Drawing.Point(338, 255);
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
@@ -105,6 +108,7 @@
             // 
             // tbSdt
             // 
+            this.tbSdt.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbSdt.Location = new System.Drawing.Point(338, 199);
             this.tbSdt.Multiline = true;
             this.tbSdt.Name = "tbSdt";
@@ -114,6 +118,7 @@
             // 
             // tbTen
             // 
+            this.tbTen.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbTen.Location = new System.Drawing.Point(338, 144);
             this.tbTen.Multiline = true;
             this.tbTen.Name = "tbTen";
@@ -180,6 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(771, 566);
             this.Controls.Add(this.tbMk);
             this.Controls.Add(this.label2);

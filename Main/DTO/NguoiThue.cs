@@ -8,16 +8,23 @@ namespace WindowsFormsApp3
 {
     internal class NguoiThue
     {
-        private string email;
-        private string diaChi;
-        private string sdt;
-        private string ten;
-        public NguoiThue(string email, string address, string phone, string name)
+        
+        public string email { get; set; }
+        public string diaChi { get; set; }
+        public string sdt { get; set; }
+        public string ten { get; set; }
+        public string mk { get; set; }
+        public string maNT { get; set; }
+        public bool gioiTinh { get; set; }
+        public NguoiThue(string email, string address, string phone, string name, string mk, string maNT, bool gioiTinh)
         {
             this.email = email;
             this.diaChi = address;
             this.sdt = phone;
             this.ten = name;
+            this.mk = mk;
+            this.maNT = maNT;
+            this.gioiTinh = gioiTinh;
         }
         public string getEmail()
         {

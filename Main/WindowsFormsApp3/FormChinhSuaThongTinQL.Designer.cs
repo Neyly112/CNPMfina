@@ -95,6 +95,7 @@
             // 
             // tbTen
             // 
+            this.tbTen.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tbTen.Location = new System.Drawing.Point(316, 163);
             this.tbTen.Multiline = true;
             this.tbTen.Name = "tbTen";
@@ -104,6 +105,7 @@
             // 
             // tbSdt
             // 
+            this.tbSdt.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbSdt.Location = new System.Drawing.Point(316, 218);
             this.tbSdt.Multiline = true;
             this.tbSdt.Name = "tbSdt";
@@ -112,6 +114,7 @@
             // 
             // tbEmail
             // 
+            this.tbEmail.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbEmail.Location = new System.Drawing.Point(316, 274);
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
@@ -120,6 +123,7 @@
             // 
             // tbDiaChi
             // 
+            this.tbDiaChi.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbDiaChi.Location = new System.Drawing.Point(316, 330);
             this.tbDiaChi.Multiline = true;
             this.tbDiaChi.Name = "tbDiaChi";
@@ -150,6 +154,7 @@
             // 
             // tbMk
             // 
+            this.tbMk.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.tbMk.Location = new System.Drawing.Point(316, 390);
             this.tbMk.Multiline = true;
             this.tbMk.Name = "tbMk";
@@ -170,6 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(771, 566);
             this.Controls.Add(this.tbMk);
             this.Controls.Add(this.label2);

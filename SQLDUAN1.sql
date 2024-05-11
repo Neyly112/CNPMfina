@@ -8,30 +8,29 @@ CREATE TABLE Chu_ho
   DiaChi NVARCHAR(255) NOT NULL,
   Email NVARCHAR(50) NOT NULL,
   SoDienThoai VARCHAR(11) NOT NULL,
-  MatKhau VARCHAR(50) NOT NULL,
+  MatKhau NVARCHAR(50) NOT NULL,
   MaChuHo VARCHAR(50) NOT NULL,
   PRIMARY KEY (MaChuHo)
 )
-
+go
 ALTER TABLE Chu_ho
 ADD CONSTRAINT SDTCH UNIQUE (SoDienThoai)
 ALTER TABLE Chu_ho
 ADD CONSTRAINT MK DEFAULT '1' FOR MatKhau
-
+go
 INSERT INTO Chu_ho (Ten, DiaChi, Email, SoDienThoai, MatKhau, MaChuHo)
 VALUES
-('Chu ho 1', 'Dia chi 1', 'chuho1@example.com', '123456789', 'password1', 'CH001'),
-('Chu ho 2', 'Dia chi 2', 'chuho2@example.com', '987654321', 'password2', 'CH002'),
-('Chu ho 3', 'Dia chi 3', 'chuho3@example.com', '456789123', 'password3', 'CH003');
+(N'Chủ hộ 1', N'Địa chỉ 1', 'thuanminh1390@gmail.com', '123456789', 'password1', 'CH001')
 
 
+go
 CREATE TABLE Quan_li
 (
   Ten NVARCHAR(50) NOT NULL,
   DiaChi NVARCHAR(255) NOT NULL,
   Email VARCHAR(50) NOT NULL,
   SoDienThoai VARCHAR(11) NOT NULL,
-  MatKhau VARCHAR(50) NOT NULL,
+  MatKhau NVARCHAR(50) NOT NULL,
   MaQuanLi VARCHAR(50) NOT NULL,
   PRIMARY KEY (MaQuanLi)
 )
@@ -39,54 +38,49 @@ ALTER TABLE Quan_li
 ADD CONSTRAINT MK_QL DEFAULT '1' FOR MatKhau
 ALTER TABLE Quan_li
 ADD CONSTRAINT SDTQL UNIQUE (SoDienThoai)
-
+go
 INSERT INTO Quan_li (Ten, DiaChi, Email, SoDienThoai, MatKhau, MaQuanLi)
 VALUES
-('Quan li 1', 'Dia chi 4', 'quanli1@example.com', '000','password4', 'QL001'),
-('Quan li 2', 'Dia chi 5', 'quanli2@example.com', '001', 'password5', 'QL002');
-
-
+(N'Quản lí 1', N'Địa chỉ 4', 'thuanminh1390@gmail.com', '000','password4', 'QL001')
+go
 CREATE TABLE Nguoi_thue
 (
   Ten NVARCHAR(50) NOT NULL,
   DiaChi NVARCHAR(255) NOT NULL,
   Email VARCHAR(50) NOT NULL,
   SoDienThoai VARCHAR(11) NOT NULL,
-  MatKhau VARCHAR(50) NOT NULL,
+  MatKhau NVARCHAR(50) NOT NULL,
   MaNguoiThue VARCHAR(50) NOT NULL,
   PRIMARY KEY (MaNguoiThue),
 )
-
 ALTER TABLE Nguoi_thue
 ADD CONSTRAINT SDTNT UNIQUE (SoDienThoai)
 ALTER TABLE Nguoi_thue
 ADD CONSTRAINT MK_NT DEFAULT '1' FOR MatKhau
-
+go
 INSERT INTO Nguoi_thue (Ten, DiaChi, Email, SoDienThoai, MatKhau, MaNguoiThue)
 VALUES
-('Nguoi thue 1', 'Dia chi 7', 'nguoithue1@example.com', '0123456781', 'password7', 'NT001')
+(N'Người thuê 1', N'Địa chỉ 7', 'nguoithue1@example.com', '0123456781', 'password7', 'NT001')
 
-
+go
 CREATE TABLE Dang_ki_xe
 (
   Ngay_dang_ki DATE NOT NULL,
   bien_so VARCHAR(50) NOT NULL,
-  loai_xe VARCHAR(50) NOT NULL,
+  loai_xe NVARCHAR(50) NOT NULL,
   MaNguoiThue VARCHAR(50) NOT NULL,
   PRIMARY KEY (bien_so),
   FOREIGN KEY (MaNguoiThue) REFERENCES Nguoi_thue(MaNguoiThue)
 )
 
-select * from Dang_ki_xe
+go
 -- Insert data into Nguoi_thue (Renter) table
 
 -- Insert data into Dang_ki_xe (Vehicle Registration) table
-INSERT INTO Dang_ki_xe (Ngay_dang_ki, bien_so, loai_xe, Ma_nguoi_thue)
-VALUES ('2023-12-31', 'ABC-123', 'xe may', 'NT002');
+INSERT INTO Dang_ki_xe (Ngay_dang_ki, bien_so, loai_xe, MaNguoiThue)
+VALUES ('2023-12-31', 'ABC-123', N'xe máy', 'NT001');
+go
 
-INSERT INTO Dang_ki_xe (Ngay_dang_ki, bien_so, loai_xe, Ma_nguoi_thue)
-VALUES ('2024-01-15', 'DEF-456', 'xe duoi 1,5 tan', 'NT003');
-drop table Dang_ki_xe
 
 create proc xemXe
 as
@@ -96,17 +90,17 @@ end
 
 drop proc xemXe
 exec xemXe
-
+go
 
 CREATE TABLE Phong_cho_thue
 (
   MaPhong VARCHAR(50) NOT NULL,
   MoTaPhong NVARCHAR(255) NOT NULL,
   GiaPhong FLOAT NOT NULL check(GiaPhong > 0),
-  TrangThaiPhong VARCHAR(50) NOT NULL,
+  TrangThaiPhong NVARCHAR(50) NOT NULL,
   PRIMARY KEY (MaPhong),
 )
-
+go
 INSERT INTO Phong_cho_thue(MaPhong, MoTaPhong, GiaPhong, TrangThaiPhong)
 VALUES
 ('P002',N'1 phòng ngủ, 2 máy lạnh, 1 nhà bếp',50000000,N'Đã cho thuê'),
@@ -121,7 +115,7 @@ VALUES
 ('P011',N'2 phòng ngủ, 2 máy lạnh, 1 nhà bếp',17000000,N'Chưa được thuê'),
 ('P012',N'1 phòng ngủ, 1 máy lạnh, 1 nhà bếp',13000000,N'Chưa được thuê'),
 ('P013',N'3 phòng ngủ, 3 máy lạnh, 1 nhà bếp',23000000,N'Chưa được thuê');
-
+go
 CREATE TABLE Phong_thue_so_huu
 (
   TaiKhoan VARCHAR(50) NOT NULL,
@@ -129,18 +123,12 @@ CREATE TABLE Phong_thue_so_huu
   FOREIGN KEY (MaPhong) REFERENCES Phong_cho_thue(MaPhong),
   FOREIGN KEY (TaiKhoan) REFERENCES Nguoi_thue(MaNguoiThue)
 )
-
+go
 INSERT INTO Phong_thue_so_huu (TaiKhoan, MaPhong)
 VALUES 
-('NT001', 'P002'),
-('NT001', 'P003'),
-('NT002', 'P004'),
-('NT003', 'P002'),
-('NT004', 'P005'),
-('NT005', 'P006'),
-('NT006', 'P007');
+('NT001', 'P002')
 
-
+go
 
 CREATE TABLE Hop_dong
 (
@@ -159,11 +147,11 @@ CREATE TABLE Hop_dong
   FOREIGN KEY (MaNguoiThue) REFERENCES Nguoi_thue(MaNguoiThue),
   FOREIGN KEY (MaPhong) REFERENCES Phong_cho_thue(MaPhong)
 );
-drop table Hop_dong
+go
 INSERT INTO Hop_dong (MaHopDong, NgayBatDau, NgayKetThuc, SoNguoiO, MaPhong, TrangThai, MaChuHo, MaNguoiThue, MaQuanLi)
 VALUES 
-('HD001', '2024-05-14', '2024-06-1', 1, 'P002', 'Chưa xác nhận', 'CH001', 'NT001', 'QL001'),
-
+('HD001', '2024-05-14', '2024-06-1', 1, 'P002', N'Chưa xác nhận', 'CH001', 'NT001', 'QL001')
+go
 CREATE TABLE Bang_phi
 (
   TienNuoc FLOAT NOT NULL Check(TienNuoc > 0),
@@ -179,17 +167,14 @@ CREATE TABLE Bang_phi
   FOREIGN KEY (MaChuHo) REFERENCES Chu_ho(MaChuHo),
   FOREIGN KEY (MaQuanLi) REFERENCES Quan_li(MaQuanLi)
 )
-
+go
 INSERT INTO Bang_phi (TienNuoc, PhiSinhHoat, TienDien, TienXeMay, TienXeDap, TienXeDuoi1_5Tan, MaBangPhi, MaChuHo, MaQuanLi) 
 VALUES 
-(50.00, 100.00, 80.00, 20.00, 0.00, 50.00, 'BP001', 'CH001', 'QL001'),
+(50.00, 100.00, 80.00, 20.00, 0.00, 50.00, 'BP001', 'CH001', 'QL001')
 
 
 
-select * from Phong_cho_thue
-select * from Hoa_don
-select * from Bang_phi
-select * from Phong_cho_thue
+go
 
 CREATE TABLE Hoa_don
 (
@@ -203,11 +188,11 @@ CREATE TABLE Hoa_don
   FOREIGN KEY (MaPhong) REFERENCES Phong_cho_thue(MaPhong),
   FOREIGN KEY (MaBangPhi) REFERENCES Bang_phi(MaBangPhi)
 )
-
+go
 INSERT INTO Hoa_don (MaHoaDon, NgayLapHoaDon, MaPhong, MaBangPhi, TongTien, TrangThai) 
 VALUES 
-('HD001', '2024-05-20', 'P002', 'BP001', 220000000, 'Chưa thanh toán'),
-
+('HD001', '2024-05-20', 'P002', 'BP001', 220000000, N'Chưa thanh toán')
+go
 CREATE TABLE Dien
 (
   so_kwh FLOAT NOT NULL check(so_kwh > 0) ,
@@ -230,7 +215,7 @@ CREATE TABLE Tien_xe
   MaHoaDon VARCHAR(50) NOT NULL,
   FOREIGN KEY (MaHoaDon) REFERENCES Hoa_don(MaHoaDon)
 )
-
+go
 CREATE FUNCTION getTopMaHoaDonn() 
 RETURNS VARCHAR(10)
 AS
@@ -239,8 +224,7 @@ BEGIN
     SELECT @result = (SELECT TOP 1 MaHoaDon FROM Hoa_don ORDER BY MaHoaDon DESC);
     RETURN @result;
 END;
-print dbo.getTopMaHoaDonn()
-
+go
 create proc insertToNuoc 
 @so_m3 float, @tongTienNuoc float
 as 
@@ -249,9 +233,7 @@ begin
 	set @ma = dbo.getTopMaHoaDonn()
 	insert into Nuoc values(@so_m3, @tongTienNuoc, @ma)
 end
-drop proc insertToNuoc
-drop proc insertToDien
-
+go
 create proc insertToDien 
 @soKwh float, @tongTienDien float
 as 
@@ -260,7 +242,7 @@ begin
 	set @ma = dbo.getTopMaHoaDonn()
 	insert into Dien values(@soKwh, @tongTienDien, @ma)
 end
-
+go
 create proc insertToTienXe
 @soLuongXe float, @tongTienXe float
 as 
@@ -269,9 +251,7 @@ begin
 	set @ma = dbo.getTopMaHoaDonn()
 	insert into Tien_xe values(@soLuongXe, @tongTienXe, @ma)
 end
-print dbo.insertTableHoaDon()
-exec insertToDien '2', '444'
-
+go
 
 create proc getGiaPhong 
 @maPhong varchar(10)
@@ -279,13 +259,7 @@ as
 begin 
 	select GiaPhong from Phong_cho_thue where MaPhong = @maPhong
 end
-exec getGiaPhong 'P002'
-
-select * from Hoa_don
-select * from Dien
-select * from Nuoc
-select * from Tien_xe
-
+go
 
 -- trigger kiểm tra ngày lập họp đồng --
 CREATE TRIGGER CheckStartDateBeforeEndDate
@@ -304,7 +278,7 @@ BEGIN
         RETURN
     END
 END
-
+go
 
 CREATE FUNCTION getTopMa() 
 RETURNS VARCHAR(10)
@@ -314,9 +288,7 @@ BEGIN
     SELECT @result = (SELECT TOP 1 MaChuHo FROM Chu_ho ORDER BY MaChuHo DESC);
     RETURN @result;
 END;
-DECLARE @output VARCHAR(10);
-SET @output = dbo.getTopMa();
-PRINT @output;
+go
 --tao ma tu dong
 create function insertTableChuho()
 returns varchar(10) as
@@ -339,20 +311,16 @@ begin
 	end
 	return @ma
 end
-drop function insertTableChuho
-print dbo.insertTableChuho()
-
+go
 create proc insertToChuho
-@ten varchar(255),@diachi varchar(255), @email varchar(255),@sodienthoai varchar(50), @matkhau varchar(10)
+@ten nvarchar(255),@diachi nvarchar(255), @email varchar(255),@sodienthoai varchar(50), @matkhau nvarchar(10)
 as 
 begin
 	declare @ma varchar(10)
 	set @ma = dbo.insertTableChuho()
 	insert into Chu_ho values(@ten, @diachi, @email, @sodienthoai, @matkhau, @ma)
 end
-drop proc insertToChuho
-exec insertToChuho'Nguyen Van A1', '123 Nguyen Du, Quan 1, TP.HCM', 'nguyenvana@email.com', '01234567891', 'matkhau123'
-
+go
 
 ---ma nguoi thue
  
@@ -361,8 +329,7 @@ returns varchar(10) as
 	begin 
 		return (select top 1 MaNguoiThue from Nguoi_thue order by MaNguoiThue desc)
 	end
-print dbo.getTopMaNT()
-drop function getTopMaNT
+go
 --tao ma tu dong
 create function insertTableNguoiThue()
 returns varchar(10) as
@@ -385,63 +352,37 @@ begin
 	end
 	return @ma
 end
-drop function insertTableNguoiThue
-print dbo.insertTableNguoiThue()
-
+go
 create proc insertToNguoiThue
- @email varchar(255), @diachi varchar(255), @sodienthoai varchar(50), @ten varchar(255), @matkhau varchar(10)
+ @email varchar(255), @diachi nvarchar(255), @sodienthoai varchar(50), @ten nvarchar(255), @matkhau nvarchar(10)
 as 
 begin
 	declare @ma varchar(10)
 	set @ma = dbo.insertTableNguoiThue()
 	insert into Nguoi_thue values(@ten, @diachi, @email, @sodienthoai, @matkhau, @ma)
 end
-drop proc insertToNguoiThue
-exec insertToNguoiThue 'nguoithue2@example.com', 'Dia chi 8', '8765413210', 'Nguoi thue 2', 'password8'
-
-select * from Phong_cho_thue
-
-
-select * from Nguoi_thue
-delete from Nguoi_thue where MaNguoiThue = 'NT001'
-select * from Hop_dong 
-
-select * from Chu_ho
-
-select * from Quan_li
-
---hop dong
-delete from Phong_thue_so_huu where TaiKhoan = 'NT004'
-select * from Phong_cho_thue
-
-select * from Phong_thue_so_huu
-
-
-select top 1 * from Chu_ho order by MaChuHo desc
-
-
+go
 create proc getTenNguoiThue
 @maPhong varchar(50)
 as 
 begin
 	select top 1 Nguoi_thue.Ten from Nguoi_thue join Phong_thue_so_huu on Nguoi_thue.MaNguoiThue = Phong_thue_so_huu.TaiKhoan where Phong_thue_so_huu.MaPhong = @maPhong order by MaNguoiThue desc
 end
+go
 
-exec getTenNguoiThue 'P002'
-drop proc getTenNguoiThue
 create function getTopMaHD() 
 returns varchar(10) as
 	begin 
 		return (select top 1 MaHopDong from Hop_dong order by MaHopDong desc)
 	end
-print dbo.getTopMaHD()
-drop function getTopMaHD
+go
+
 create function getTopMaBP() 
 returns varchar(10) as
 	begin 
 		return (select top 1 MaBangPhi from Bang_phi order by MaBangPhi desc)
 	end
-print dbo.getTopMaBP()
+go
 
 create function insertTableBP()
 returns varchar(10) as
@@ -464,7 +405,7 @@ begin
 	end
 	return @ma
 end
-
+go
 create proc insertToBP
 @TienNuoc float, @PhiSinhHoat float, @TienDien float, @TienXeMay float, @TienXeDap float, @TienXeDuoi1_5Tan float
 as 
@@ -477,14 +418,13 @@ begin
 	set @maQL = dbo.getTopMaQL()
 	insert into Bang_phi values(@TienNuoc, @PhiSinhHoat, @TienDien, @TienXeMay, @TienXeDap, @TienXeDuoi1_5Tan, @ma, @maCH, @maQL)
 end
-
+go
 create function getTopMaCH() 
 returns varchar(10) as
 	begin 
 		return (select top 1 MaChuHo from Chu_ho order by MaChuHo desc)
 	end
-print dbo.getTopMaCH()
-select * from Bang_phi 
+go
 --tao ma tu dong
 create function insertTableHD()
 returns varchar(10) as
@@ -508,9 +448,7 @@ begin
 	end
 	return @ma
 end
-drop function insertTableHD
-print dbo.insertTableHD()
-
+go
 create proc insertToHD
 @NgayKT date, @nguoi int, @NgayBD date, @maPhong varchar(50)
 as 
@@ -523,11 +461,9 @@ begin
 	set @maQL = dbo.getTopMaQL()
 	set @maCH = dbo.getTopMa()
 	set @maNT = dbo.getTopMaNT()
-	insert into Hop_dong values(@maHD, @NgayBD, @NgayKT, @nguoi,  @maPhong, 'Chưa xác nhận', @maCH, @maNT, @maQL)
+	insert into Hop_dong values(@maHD, @NgayBD, @NgayKT, @nguoi,  @maPhong, N'Chưa xác nhận', @maCH, @maNT, @maQL)
 end
-exec insertToHD '2024-03-17', 3, '2024-03-01', 'P002'
-exec insertToHD '2024-03-01', 2, '2024-01-01', 'P002'
-drop proc insertToHD
+go
 
 
 
@@ -536,18 +472,14 @@ returns varchar(10) as
 	begin 
 		return (select top 1 MaQuanLi from Quan_li order by MaQuanLi desc)
 	end
-print dbo.getTopMaQL()
-
-select * from Hop_dong
-
+go
 
 create function getTopMaHoaDon() 
 returns varchar(10) as
 	begin 
 		return (select top 1 MaHoaDon from Hoa_don order by MaHoaDon desc)
 	end
-print dbo.getTopMaHoaDon()
-drop function getTopMaHoaDon
+go
 --tao ma tu dong
 create function insertTableHoaDon()
 returns varchar(10) as
@@ -570,9 +502,7 @@ begin
 	end
 	return @ma
 end
-drop function insertTableHoaDon
-print dbo.insertTableHoaDon()
-
+go
 
 create proc insertToHoaDon
 @Ngay_lap_hoa_don date, @maPhong varchar(10), @Ma_bang_phi varchar(10), @tongTien float
@@ -582,7 +512,10 @@ begin
 	set @ma = dbo.insertTableHoaDon()
 	insert into Hoa_don values(@ma, @Ngay_lap_hoa_don, @maPhong, @Ma_bang_phi, @tongTien, 'Chưa thanh toán')
 end
-drop proc insertToHoaDon
 
-exec insertToHoaDon '2024-03-14', 'P002', 'BP003', 210000000
-select * from Hoa_don
+
+select * from Nguoi_thue
+select * from Quan_li
+select * from Phong_cho_thue
+update Phong_cho_thue set TrangThaiPhong = N'Đã thuê' where MaPhong = 'P002'
+select * from Chu_ho

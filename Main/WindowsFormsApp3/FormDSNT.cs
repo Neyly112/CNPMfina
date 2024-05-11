@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using DTO1;
+using DAO1;
+using BLL1;
+namespace WindowsFormsApp3
+{
+    public partial class FormDSNT : Form
+    {
+        ClassConnect c = new ClassConnect();
+        string strSql;
+        string ma;
+        DataTable dataTable;
+        public FormDSNT(string ma)
+        {
+            InitializeComponent();
+            this.ma = ma;
+        }
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void showNT()
+        {
+            dataGridView1.DataSource = ClassNTBLL.Instance.GetAllNT();
+            dataTable = NT1DAO.Instance.GetAllNT();
+        }
+        private void FormDSNT_Load(object sender, EventArgs e)
+        {
+            showNT();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            trangchu t = new trangchu(ma);
+            t.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

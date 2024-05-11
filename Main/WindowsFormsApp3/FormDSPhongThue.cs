@@ -13,7 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormDSPhongThue : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
 
@@ -21,6 +22,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void FormDSPhongThue_Load(object sender, EventArgs e)
@@ -44,9 +46,20 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            trangchu f = new trangchu(ma);
+            trangchu t = new trangchu(ma);
             this.Hide();
-            f.ShowDialog();
+            t.Show();
+           
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -13,7 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormDSHDCH : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
        
@@ -21,6 +22,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -33,8 +35,9 @@ namespace WindowsFormsApp3
             string ngayKT = Convert.ToString(row.Cells["NgayKetThuc"].Value);
             string soNg = Convert.ToString(row.Cells["SoNguoiO"].Value);
             string maNguoiThue = Convert.ToString(row.Cells["MaNguoiThue"].Value);
-            FormXacNhanHD f = new FormXacNhanHD(ma, maPhong, soNg, ngayBD, ngayKT, maNguoiThue);
+            FormXacNhanHD f = new FormXacNhanHD(ma, maPhong, soNg, ngayBD, ngayKT, maNguoiThue, maHD);
             f.ShowDialog();
+            this.Hide();
         }
 
         private void FormDSHDCH_Load(object sender, EventArgs e)

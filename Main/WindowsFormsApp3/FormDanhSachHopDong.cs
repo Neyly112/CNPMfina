@@ -12,13 +12,15 @@ namespace WindowsFormsApp3
 {
     public partial class FormDanhSachHopDong : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         public FormDanhSachHopDong(string ma)
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void FormDanhSachHopDong_Load(object sender, EventArgs e)
@@ -70,6 +72,11 @@ namespace WindowsFormsApp3
             FormNewHD f = new FormNewHD(ma);   
             f.ShowDialog();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

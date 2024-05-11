@@ -152,7 +152,8 @@ namespace WindowsFormsApp3
             }
             else
             {
-                SqlConnection con = new SqlConnection(@"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True");
+                ClassConnect c = new ClassConnect();
+                SqlConnection con = new SqlConnection(c.SqlConect());
                 try
                 {
                     con.Open();

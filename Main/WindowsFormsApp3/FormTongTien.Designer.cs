@@ -86,7 +86,7 @@
             // 
             this.lbTienXe.AutoSize = true;
             this.lbTienXe.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTienXe.Location = new System.Drawing.Point(498, 319);
+            this.lbTienXe.Location = new System.Drawing.Point(533, 319);
             this.lbTienXe.Name = "lbTienXe";
             this.lbTienXe.Size = new System.Drawing.Size(215, 37);
             this.lbTienXe.TabIndex = 58;
@@ -106,7 +106,7 @@
             // 
             this.lbTienThuePhong.AutoSize = true;
             this.lbTienThuePhong.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTienThuePhong.Location = new System.Drawing.Point(498, 471);
+            this.lbTienThuePhong.Location = new System.Drawing.Point(533, 471);
             this.lbTienThuePhong.Name = "lbTienThuePhong";
             this.lbTienThuePhong.Size = new System.Drawing.Size(215, 37);
             this.lbTienThuePhong.TabIndex = 56;
@@ -126,7 +126,7 @@
             // 
             this.lbNgayLap.AutoSize = true;
             this.lbNgayLap.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbNgayLap.Location = new System.Drawing.Point(498, 414);
+            this.lbNgayLap.Location = new System.Drawing.Point(533, 414);
             this.lbNgayLap.Name = "lbNgayLap";
             this.lbNgayLap.Size = new System.Drawing.Size(215, 37);
             this.lbNgayLap.TabIndex = 54;
@@ -166,7 +166,7 @@
             // 
             this.lbTongTien.AutoSize = true;
             this.lbTongTien.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTongTien.Location = new System.Drawing.Point(498, 527);
+            this.lbTongTien.Location = new System.Drawing.Point(533, 527);
             this.lbTongTien.Name = "lbTongTien";
             this.lbTongTien.Size = new System.Drawing.Size(215, 37);
             this.lbTongTien.TabIndex = 50;
@@ -176,7 +176,7 @@
             // 
             this.lbPhiSinhHoat.AutoSize = true;
             this.lbPhiSinhHoat.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbPhiSinhHoat.Location = new System.Drawing.Point(498, 264);
+            this.lbPhiSinhHoat.Location = new System.Drawing.Point(533, 264);
             this.lbPhiSinhHoat.Name = "lbPhiSinhHoat";
             this.lbPhiSinhHoat.Size = new System.Drawing.Size(215, 37);
             this.lbPhiSinhHoat.TabIndex = 49;
@@ -186,7 +186,7 @@
             // 
             this.lbTongTienNuoc.AutoSize = true;
             this.lbTongTienNuoc.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTongTienNuoc.Location = new System.Drawing.Point(498, 209);
+            this.lbTongTienNuoc.Location = new System.Drawing.Point(533, 209);
             this.lbTongTienNuoc.Name = "lbTongTienNuoc";
             this.lbTongTienNuoc.Size = new System.Drawing.Size(215, 37);
             this.lbTongTienNuoc.TabIndex = 48;
@@ -196,7 +196,7 @@
             // 
             this.lbTongTienDien.AutoSize = true;
             this.lbTongTienDien.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTongTienDien.Location = new System.Drawing.Point(498, 157);
+            this.lbTongTienDien.Location = new System.Drawing.Point(533, 157);
             this.lbTongTienDien.Name = "lbTongTienDien";
             this.lbTongTienDien.Size = new System.Drawing.Size(215, 37);
             this.lbTongTienDien.TabIndex = 47;

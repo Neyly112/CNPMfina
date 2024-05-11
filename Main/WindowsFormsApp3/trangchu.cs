@@ -179,5 +179,26 @@ namespace WindowsFormsApp3
             f.ShowDialog();
             this.Hide();
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            FormDSNT f = new FormDSNT(ma);
+            f.ShowDialog();
+            this.Hide();    
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            FormDSNT f = new FormDSNT(ma);
+            f.ShowDialog();
+            this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            FormDSNT f = new FormDSNT(ma);
+            f.ShowDialog();
+            this.Hide();
+        }
     }
 }

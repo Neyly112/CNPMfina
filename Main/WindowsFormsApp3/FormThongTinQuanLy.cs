@@ -14,7 +14,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormThongTinQuanLy : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         string matKhau;
@@ -26,6 +27,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -59,11 +61,11 @@ namespace WindowsFormsApp3
             SqlDataReader reader = sqlCm.ExecuteReader();
             while (reader.Read())
             {
-                matKhau = reader.GetString(0);
+                matKhau = reader.GetString(4);
                 diaChi = reader.GetString(1);
                 sDT = reader.GetString(3);
-                email = reader.GetString(4);
-                ten = reader.GetString(5);
+                email = reader.GetString(2);
+                ten = reader.GetString(0);
                 lbTen.Text = ten;
                 lbDiaChi.Text = diaChi;
                 lbEmail.Text = email;
@@ -76,7 +78,7 @@ namespace WindowsFormsApp3
         private void button1_Click(object sender, EventArgs e)
         {
 
-            FormChinhSuaThongTinQL f = new FormChinhSuaThongTinQL(ma, ten, diaChi, email, matKhau, sDT);
+            FormChinhSuaThongTinQL f = new FormChinhSuaThongTinQL(ma, ten, diaChi, email, sDT, matKhau);
             f.ShowDialog();
             this.Hide();
         }

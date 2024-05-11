@@ -34,20 +34,20 @@
             this.ngayBatDau = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.tbTienNuoc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbTienDien = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbMaCanHo = new System.Windows.Forms.TextBox();
+            this.tbTienDien = new System.Windows.Forms.TextBox();
+            this.tbTienNuoc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(238, 408);
+            this.label7.Location = new System.Drawing.Point(238, 395);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(200, 37);
             this.label7.TabIndex = 35;
@@ -57,7 +57,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(238, 352);
+            this.label6.Location = new System.Drawing.Point(238, 339);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(193, 37);
             this.label6.TabIndex = 34;
@@ -68,10 +68,10 @@
             this.ngayKetThuc.CustomFormat = "yyy-MM-dd";
             this.ngayKetThuc.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ngayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngayKetThuc.Location = new System.Drawing.Point(461, 408);
+            this.ngayKetThuc.Location = new System.Drawing.Point(461, 395);
             this.ngayKetThuc.Name = "ngayKetThuc";
             this.ngayKetThuc.Size = new System.Drawing.Size(294, 39);
-            this.ngayKetThuc.TabIndex = 31;
+            this.ngayKetThuc.TabIndex = 5;
             this.ngayKetThuc.ValueChanged += new System.EventHandler(this.ngayKetThuc_ValueChanged);
             // 
             // ngayBatDau
@@ -79,11 +79,11 @@
             this.ngayBatDau.CustomFormat = "yyy-MM-dd";
             this.ngayBatDau.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ngayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngayBatDau.Location = new System.Drawing.Point(461, 357);
+            this.ngayBatDau.Location = new System.Drawing.Point(461, 344);
             this.ngayBatDau.MinDate = new System.DateTime(2024, 5, 4, 0, 0, 0, 0);
             this.ngayBatDau.Name = "ngayBatDau";
             this.ngayBatDau.Size = new System.Drawing.Size(294, 39);
-            this.ngayBatDau.TabIndex = 30;
+            this.ngayBatDau.TabIndex = 4;
             this.ngayBatDau.ValueChanged += new System.EventHandler(this.ngayBatDau_ValueChanged);
             // 
             // button2
@@ -108,15 +108,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // tbTienNuoc
-            // 
-            this.tbTienNuoc.Font = new System.Drawing.Font("Times New Roman", 19.8F);
-            this.tbTienNuoc.Location = new System.Drawing.Point(461, 282);
-            this.tbTienNuoc.Multiline = true;
-            this.tbTienNuoc.Name = "tbTienNuoc";
-            this.tbTienNuoc.Size = new System.Drawing.Size(143, 39);
-            this.tbTienNuoc.TabIndex = 27;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -126,15 +117,6 @@
             this.label4.Size = new System.Drawing.Size(174, 37);
             this.label4.TabIndex = 26;
             this.label4.Text = "Số m3 nước";
-            // 
-            // tbTienDien
-            // 
-            this.tbTienDien.Font = new System.Drawing.Font("Times New Roman", 19.8F);
-            this.tbTienDien.Location = new System.Drawing.Point(461, 222);
-            this.tbTienDien.Multiline = true;
-            this.tbTienDien.Name = "tbTienDien";
-            this.tbTienDien.Size = new System.Drawing.Size(143, 39);
-            this.tbTienDien.TabIndex = 25;
             // 
             // label3
             // 
@@ -168,13 +150,31 @@
             // 
             // tbMaCanHo
             // 
-            this.tbMaCanHo.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbMaCanHo.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tbMaCanHo.Location = new System.Drawing.Point(461, 162);
             this.tbMaCanHo.Multiline = true;
             this.tbMaCanHo.Name = "tbMaCanHo";
             this.tbMaCanHo.Size = new System.Drawing.Size(294, 39);
-            this.tbMaCanHo.TabIndex = 23;
-            this.tbMaCanHo.TextChanged += new System.EventHandler(this.tbMaCanHo_TextChanged);
+            this.tbMaCanHo.TabIndex = 1;
+            this.tbMaCanHo.TextChanged += new System.EventHandler(this.tbMaCanHo_TextChanged_1);
+            // 
+            // tbTienDien
+            // 
+            this.tbTienDien.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.tbTienDien.Location = new System.Drawing.Point(461, 222);
+            this.tbTienDien.Multiline = true;
+            this.tbTienDien.Name = "tbTienDien";
+            this.tbTienDien.Size = new System.Drawing.Size(294, 39);
+            this.tbTienDien.TabIndex = 2;
+            // 
+            // tbTienNuoc
+            // 
+            this.tbTienNuoc.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.tbTienNuoc.Location = new System.Drawing.Point(461, 282);
+            this.tbTienNuoc.Multiline = true;
+            this.tbTienNuoc.Name = "tbTienNuoc";
+            this.tbTienNuoc.Size = new System.Drawing.Size(294, 39);
+            this.tbTienNuoc.TabIndex = 3;
             // 
             // FormNhapTinhToan
             // 
@@ -182,17 +182,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(993, 597);
+            this.Controls.Add(this.tbTienNuoc);
+            this.Controls.Add(this.tbTienDien);
+            this.Controls.Add(this.tbMaCanHo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ngayKetThuc);
             this.Controls.Add(this.ngayBatDau);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tbTienNuoc);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbTienDien);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbMaCanHo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormNhapTinhToan";
@@ -212,12 +212,12 @@
         private System.Windows.Forms.DateTimePicker ngayBatDau;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tbTienNuoc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbTienDien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbMaCanHo;
+        private System.Windows.Forms.TextBox tbTienDien;
+        private System.Windows.Forms.TextBox tbTienNuoc;
     }
 }

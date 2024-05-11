@@ -52,6 +52,7 @@
     <Compile Include="checkCode.Designer.cs">
       <DependentUpon>checkCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassConnect.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     <Compile Include="FormChinhThongTinChuHO.Designer.cs">
       <DependentUpon>FormChinhThongTinChuHO.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCTHDNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTHDNT.Designer.cs">
+      <DependentUpon>FormCTHDNT.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDanhSachHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +95,23 @@
     <Compile Include="FormDieuChinhPhi.Designer.cs">
       <DependentUpon>FormDieuChinhPhi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDieuChinhPhiCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDieuChinhPhiCH.Designer.cs">
+      <DependentUpon>FormDieuChinhPhiCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDSBangPhi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDSBangPhi.Designer.cs">
       <DependentUpon>FormDSBangPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSBP.Designer.cs">
+      <DependentUpon>FormDSBP.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDSHDCH.cs">
       <SubType>Form</SubType>
@@ -100,17 +119,47 @@
     <Compile Include="FormDSHDCH.Designer.cs">
       <DependentUpon>FormDSHDCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDSHDNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSHDNT.Designer.cs">
+      <DependentUpon>FormDSHDNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSNT.Designer.cs">
+      <DependentUpon>FormDSNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSNTCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSNTCH.Designer.cs">
+      <DependentUpon>FormDSNTCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDSPhongThue.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDSPhongThue.Designer.cs">
       <DependentUpon>FormDSPhongThue.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDSPTCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSPTCH.Designer.cs">
+      <DependentUpon>FormDSPTCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGiaHanHD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGiaHanHD.Designer.cs">
       <DependentUpon>FormGiaHanHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHDNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHDNT.Designer.cs">
+      <DependentUpon>FormHDNT.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHuyHopDong.cs">
       <SubType>Form</SubType>
@@ -167,7 +216,6 @@
       <DependentUpon>FormXacNhanHD.cs</DependentUpon>
     </Compile>
     <Compile Include="HopDong.cs" />
-    <Compile Include="NguoiThue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="quenMK.cs">
@@ -209,23 +257,47 @@
     <EmbeddedResource Include="FormChinhThongTinChuHO.resx">
       <DependentUpon>FormChinhThongTinChuHO.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCTHDNT.resx">
+      <DependentUpon>FormCTHDNT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDanhSachHopDong.resx">
       <DependentUpon>FormDanhSachHopDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDieuChinhPhi.resx">
       <DependentUpon>FormDieuChinhPhi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDieuChinhPhiCH.resx">
+      <DependentUpon>FormDieuChinhPhiCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDSBangPhi.resx">
       <DependentUpon>FormDSBangPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSBP.resx">
+      <DependentUpon>FormDSBP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDSHDCH.resx">
       <DependentUpon>FormDSHDCH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDSHDNT.resx">
+      <DependentUpon>FormDSHDNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSNT.resx">
+      <DependentUpon>FormDSNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSNTCH.resx">
+      <DependentUpon>FormDSNTCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDSPhongThue.resx">
       <DependentUpon>FormDSPhongThue.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDSPTCH.resx">
+      <DependentUpon>FormDSPTCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGiaHanHD.resx">
       <DependentUpon>FormGiaHanHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHDNT.resx">
+      <DependentUpon>FormHDNT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHuyHopDong.resx">
       <DependentUpon>FormHuyHopDong.cs</DependentUpon>
@@ -435,6 +507,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL1\BLL1.csproj">
+      <Project>{441ff2a7-9329-4eb9-b5c6-81960da276f2}</Project>
+      <Name>BLL1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO1\DAO1.csproj">
+      <Project>{3e695277-8d24-450f-81a5-875fa3857957}</Project>
+      <Name>DAO1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO1\DTO1.csproj">
+      <Project>{7218dc02-9358-43f1-8dc9-2b9cdfe86b2d}</Project>
+      <Name>DTO1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

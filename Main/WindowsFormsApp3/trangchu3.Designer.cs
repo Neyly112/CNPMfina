@@ -53,6 +53,9 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -60,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // button7
@@ -345,12 +349,54 @@
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox10.Image = global::WindowsFormsApp3.Properties.Resources.revenue__1_;
+            this.pictureBox10.Location = new System.Drawing.Point(114, 478);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(109, 81);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 71;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Gold;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label12.Location = new System.Drawing.Point(74, 572);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(190, 23);
+            this.label12.TabIndex = 70;
+            this.label12.Text = "Danh sách người thuê";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Gold;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button12.Location = new System.Drawing.Point(56, 445);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(225, 159);
+            this.button12.TabIndex = 69;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // trangchu3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1420, 680);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button11);
@@ -387,6 +433,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,5 +465,8 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button12;
     }
 }

@@ -14,7 +14,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormChinhThongTinKH : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         string ten;
@@ -31,6 +32,7 @@ namespace WindowsFormsApp3
             this.sDT = sDT;
             this.email = email;
             this.diaChi = diaChi;
+            strSql = c.SqlConect();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -60,7 +62,7 @@ namespace WindowsFormsApp3
             }
             SqlCommand sqlCm = new SqlCommand();
             sqlCm.CommandType = CommandType.Text;
-            sqlCm.CommandText = "Update Nguoi_thue set DiaChi='" + diaChi + "', SoDienThoai='" + Sdt + "', Email='" + email + "', Ten= '" + ten + "', MatKhau= '" + matKhau + "' where MaNguoiThue= '" + ma + "'";
+            sqlCm.CommandText = "Update Nguoi_thue set DiaChi=N'" + diaChi + "', SoDienThoai='" + Sdt + "', Email='" + email + "', Ten= N'" + ten + "', MatKhau= N'" + matKhau + "' where MaNguoiThue= '" + ma + "'";
             sqlCm.Connection = sql;
             int kq = sqlCm.ExecuteNonQuery();
             if (kq > 0)

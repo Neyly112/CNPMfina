@@ -122,6 +122,7 @@
             this.tbTenNguoiThue.Location = new System.Drawing.Point(387, 132);
             this.tbTenNguoiThue.Multiline = true;
             this.tbTenNguoiThue.Name = "tbTenNguoiThue";
+            this.tbTenNguoiThue.ReadOnly = true;
             this.tbTenNguoiThue.Size = new System.Drawing.Size(309, 39);
             this.tbTenNguoiThue.TabIndex = 2;
             this.tbTenNguoiThue.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
@@ -158,6 +159,7 @@
             this.tbSoNg.Location = new System.Drawing.Point(387, 196);
             this.tbSoNg.Multiline = true;
             this.tbSoNg.Name = "tbSoNg";
+            this.tbSoNg.ReadOnly = true;
             this.tbSoNg.Size = new System.Drawing.Size(309, 39);
             this.tbSoNg.TabIndex = 3;
             // 
@@ -185,6 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(800, 531);
             this.Controls.Add(this.tbTenPhong);
             this.Controls.Add(this.tbSoNg);

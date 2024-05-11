@@ -14,7 +14,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormHuyHopDong : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string tenNguoiThue;
         string ma;
@@ -33,6 +34,7 @@ namespace WindowsFormsApp3
             this.ngayBD = ngayBD;
             this.ngayKT = ngayKT;
             this.maNguoiThue = maNguoiThue;
+            strSql = c.SqlConect();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -158,7 +160,7 @@ namespace WindowsFormsApp3
 
             SqlCommand sqlCm = new SqlCommand();
             sqlCm.CommandType = CommandType.Text;
-            sqlCm.CommandText = "update Nguoi_thue set Ten = '" + tbTenNguoiThue.Text.Trim() + "' where MaNguoiThue = '" + maNguoiThue + "'";
+            sqlCm.CommandText = "update Nguoi_thue set Ten = N'" + tbTenNguoiThue.Text.Trim() + "' where MaNguoiThue = '" + maNguoiThue + "'";
             sqlCm.Connection = sql;
             int kq = sqlCm.ExecuteNonQuery();
             
@@ -183,8 +185,6 @@ namespace WindowsFormsApp3
         private void FormHuyHopDong_Load(object sender, EventArgs e)
         {
             funcGetTenNguoiThue();
-            MessageBox.Show(tenNguoiThue);
-            MessageBox.Show(tenPhong);
             tbTenNguoiThue.Text = tenNguoiThue;
             tbTenPhong.Text = tenPhong;
             dateTimePicker1.Text = ngayBD;

@@ -13,13 +13,15 @@ namespace WindowsFormsApp3
 {
     public partial class FormDieuChinhPhi : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         public FormDieuChinhPhi(string ma)
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void FormDieuChinhPhi_Load(object sender, EventArgs e)
@@ -30,8 +32,8 @@ namespace WindowsFormsApp3
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            trangchu trangchu = new trangchu(ma);
-            trangchu.ShowDialog();
+            FormDSBangPhi f = new FormDSBangPhi(ma);
+            f.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,6 +74,9 @@ namespace WindowsFormsApp3
             {
                 MessageBox.Show("Loi");
             }
+            this.Hide();
+            FormDSBangPhi f = new FormDSBangPhi(ma);
+            f.ShowDialog();
         }
     }
 }

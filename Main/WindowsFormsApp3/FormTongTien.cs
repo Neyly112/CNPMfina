@@ -13,7 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormTongTien : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
 
         string maCanHo;
@@ -47,6 +48,7 @@ namespace WindowsFormsApp3
             this.xeMay = xeMay;
             this.xeDap = xeDap;
             this.xeDuoi15Tan = xeDuoi15Tan;
+            strSql = c.SqlConect();
         }
 
         private void FormTongTien_Load(object sender, EventArgs e)

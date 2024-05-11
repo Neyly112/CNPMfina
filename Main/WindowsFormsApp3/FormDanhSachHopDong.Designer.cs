@@ -80,11 +80,13 @@
             this.label1.Size = new System.Drawing.Size(399, 49);
             this.label1.TabIndex = 7;
             this.label1.Text = "Danh Sách Hợp Đồng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormDanhSachHopDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1054, 494);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);

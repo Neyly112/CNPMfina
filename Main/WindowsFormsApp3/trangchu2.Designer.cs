@@ -247,6 +247,7 @@
             this.label8.Size = new System.Drawing.Size(123, 23);
             this.label8.TabIndex = 35;
             this.label8.Text = "Lập họp đồng";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button5
             // 
@@ -345,6 +346,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1420, 680);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox7);

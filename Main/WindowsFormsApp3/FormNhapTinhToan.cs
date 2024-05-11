@@ -20,13 +20,15 @@ namespace WindowsFormsApp3
         int xeDap = 0;
         int xe_duoi_1_5_tan = 0;
         int countXe = 0;
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
 
         public FormNhapTinhToan(string ma)
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
 
@@ -170,15 +172,85 @@ namespace WindowsFormsApp3
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if ((tbMaCanHo.Text == "") || (tbTienDien.Text == "" ) || (tbMaCanHo.Text == "") || (tbTienNuoc.Text == "") )
+            if ((tbMaCanHo.Text == "") || (tbTienDien.Text == "") || (tbMaCanHo.Text == "") || (tbTienNuoc.Text == ""))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                return;
             }
-            
+            if ((checkPhong(tbMaCanHo.Text.Trim()) == false) || (checkPhongDaThue(tbMaCanHo.Text.Trim()) == false))
+            {
+                MessageBox.Show("Phòng đã cho thuê hoặc không tồn tại");
+                return;
+            }
             string maPhong = tbMaCanHo.Text.Trim();
             double so_m3 = Convert.ToDouble(tbTienNuoc.Text.Trim());
             double soKwh = Convert.ToDouble(tbTienDien.Text.Trim());
             funcTinhTien(so_m3, soKwh, maPhong);
+        }
+
+        private void tbMaCanHo_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+        private bool checkPhong(string maPhong)
+        {
+            if (sql == null)
+            {
+                sql = new SqlConnection(strSql);
+            }
+            if (sql.State == ConnectionState.Closed)
+            {
+                sql.Open();
+            }
+            SqlCommand sqlCm = new SqlCommand();
+            sqlCm.CommandType = CommandType.Text;
+            sqlCm.CommandText = "select * from Phong_cho_thue where MaPhong= '" + maPhong + "'";
+            sqlCm.Connection = sql;
+            SqlDataReader reader = sqlCm.ExecuteReader();
+            int kq = 0;
+            while (reader.Read())
+            {
+                kq = 1;
+            }
+            reader.Close();
+            if (kq == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        private bool checkPhongDaThue(string maPhong)
+        {
+            if (sql == null)
+            {
+                sql = new SqlConnection(strSql);
+            }
+            if (sql.State == ConnectionState.Closed)
+            {
+                sql.Open();
+            }
+            SqlCommand sqlCm = new SqlCommand();
+            sqlCm.CommandType = CommandType.Text;
+            sqlCm.CommandText = "select * from Phong_thue_so_huu where MaPhong= '" + maPhong + "'";
+            sqlCm.Connection = sql;
+            SqlDataReader reader = sqlCm.ExecuteReader();
+            int kq = 0;
+            while (reader.Read())
+            {
+                kq = 1;
+            }
+            reader.Close();
+            if (kq == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

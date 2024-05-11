@@ -13,7 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormChinhSuaThongTinQL : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         string ten;
@@ -21,7 +22,7 @@ namespace WindowsFormsApp3
         string sDT;
         string email;
         string matKhau;
-        public FormChinhSuaThongTinQL(string ma, string ten, string diaChi, string email, string matKhau, string sDT)
+        public FormChinhSuaThongTinQL(string ma, string ten, string diaChi, string email, string sDT, string matKhau)
         {
             InitializeComponent();
             this.ma = ma;
@@ -30,6 +31,7 @@ namespace WindowsFormsApp3
             this.sDT = sDT;
             this.email = email;
             this.ten = ten;
+            strSql = c.SqlConect();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,7 +63,7 @@ namespace WindowsFormsApp3
             }
             SqlCommand sqlCm = new SqlCommand();
             sqlCm.CommandType = CommandType.Text;
-            sqlCm.CommandText = "Update Nguoi_thue set DiaChi='" + diaChi + "', SoDienThoai='" + Sdt + "', Email='" + email + "', Ten= '" + ten + "', MatKhau= '" + matKhau + "' where MaQuanLi= '" + ma + "'";
+            sqlCm.CommandText = "Update Quan_li set DiaChi=N'" + diaChi + "', SoDienThoai='" + Sdt + "', Email='" + email + "', Ten= N'" + ten + "', MatKhau= N'" + matKhau + "' where MaQuanLi= '" + ma + "'";
             sqlCm.Connection = sql;
             int kq = sqlCm.ExecuteNonQuery();
             if (kq > 0)

@@ -14,7 +14,8 @@ namespace WindowsFormsApp3
 {
     public partial class FormThongTinKH : Form
     {
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
         string ma;
         string matKhau;
@@ -26,6 +27,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,11 +55,11 @@ namespace WindowsFormsApp3
             SqlDataReader reader = sqlCm.ExecuteReader();
             while (reader.Read())
             {
-                matKhau = reader.GetString(5);
-                diaChi = reader.GetString(2);
+                matKhau = reader.GetString(4);
+                diaChi = reader.GetString(1);
                 sDT = reader.GetString(3);
-                email = reader.GetString(1);
-                ten = reader.GetString(4);
+                email = reader.GetString(2);
+                ten = reader.GetString(0);
                 lbTen.Text = ten;
                 lbDiaChi.Text = diaChi;
                 lbEmail.Text = email;

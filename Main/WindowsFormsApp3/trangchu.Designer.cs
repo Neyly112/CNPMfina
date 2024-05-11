@@ -60,6 +60,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -69,11 +72,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(620, 252);
+            this.button1.Location = new System.Drawing.Point(622, 217);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 0;
@@ -86,7 +90,7 @@
             this.button4.BackColor = System.Drawing.Color.Gold;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(713, 162);
+            this.button4.Location = new System.Drawing.Point(715, 127);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(228, 236);
             this.button4.TabIndex = 0;
@@ -98,7 +102,7 @@
             this.button6.BackColor = System.Drawing.Color.Gold;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(713, 413);
+            this.button6.Location = new System.Drawing.Point(715, 378);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(228, 135);
             this.button6.TabIndex = 0;
@@ -110,7 +114,7 @@
             this.button8.BackColor = System.Drawing.Color.Gold;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(958, 159);
+            this.button8.Location = new System.Drawing.Point(960, 124);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(181, 236);
             this.button8.TabIndex = 0;
@@ -123,7 +127,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button10.Location = new System.Drawing.Point(258, 413);
+            this.button10.Location = new System.Drawing.Point(260, 378);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(225, 135);
             this.button10.TabIndex = 0;
@@ -135,7 +139,7 @@
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(958, 413);
+            this.button2.Location = new System.Drawing.Point(960, 378);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 135);
             this.button2.TabIndex = 0;
@@ -146,7 +150,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Gold;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(258, 159);
+            this.button3.Location = new System.Drawing.Point(260, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(422, 236);
             this.button3.TabIndex = 1;
@@ -157,7 +161,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(529, 262);
+            this.label1.Location = new System.Drawing.Point(531, 227);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 3;
@@ -169,7 +173,7 @@
             this.label2.BackColor = System.Drawing.Color.Gold;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(425, 346);
+            this.label2.Location = new System.Drawing.Point(427, 311);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 4;
@@ -191,7 +195,7 @@
             this.label6.BackColor = System.Drawing.Color.Gold;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(760, 351);
+            this.label6.Location = new System.Drawing.Point(762, 316);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(141, 23);
             this.label6.TabIndex = 7;
@@ -203,7 +207,7 @@
             this.label3.BackColor = System.Drawing.Color.Gold;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(988, 351);
+            this.label3.Location = new System.Drawing.Point(990, 316);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 23);
             this.label3.TabIndex = 7;
@@ -216,7 +220,7 @@
             this.label4.BackColor = System.Drawing.Color.Gold;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(281, 516);
+            this.label4.Location = new System.Drawing.Point(283, 481);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(175, 23);
             this.label4.TabIndex = 7;
@@ -228,7 +232,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(501, 413);
+            this.button5.Location = new System.Drawing.Point(503, 378);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(179, 135);
             this.button5.TabIndex = 10;
@@ -241,7 +245,7 @@
             this.label8.BackColor = System.Drawing.Color.Gold;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Location = new System.Drawing.Point(530, 512);
+            this.label8.Location = new System.Drawing.Point(532, 477);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 23);
             this.label8.TabIndex = 13;
@@ -254,7 +258,7 @@
             this.label9.BackColor = System.Drawing.Color.Gold;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label9.Location = new System.Drawing.Point(732, 516);
+            this.label9.Location = new System.Drawing.Point(734, 481);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(188, 23);
             this.label9.TabIndex = 13;
@@ -267,7 +271,7 @@
             this.label10.BackColor = System.Drawing.Color.Gold;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label10.Location = new System.Drawing.Point(1001, 516);
+            this.label10.Location = new System.Drawing.Point(1003, 481);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 23);
             this.label10.TabIndex = 13;
@@ -293,7 +297,7 @@
             this.label7.BackColor = System.Drawing.Color.Gold;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Location = new System.Drawing.Point(82, 351);
+            this.label7.Location = new System.Drawing.Point(84, 316);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 23);
             this.label7.TabIndex = 61;
@@ -305,7 +309,7 @@
             this.button9.BackColor = System.Drawing.Color.Gold;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(52, 159);
+            this.button9.Location = new System.Drawing.Point(54, 124);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(181, 236);
             this.button9.TabIndex = 60;
@@ -318,7 +322,7 @@
             this.label11.BackColor = System.Drawing.Color.Gold;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label11.Location = new System.Drawing.Point(91, 601);
+            this.label11.Location = new System.Drawing.Point(93, 566);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 23);
             this.label11.TabIndex = 64;
@@ -330,7 +334,7 @@
             this.button11.BackColor = System.Drawing.Color.Gold;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(52, 404);
+            this.button11.Location = new System.Drawing.Point(54, 369);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(181, 236);
             this.button11.TabIndex = 63;
@@ -341,7 +345,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Gold;
             this.pictureBox9.Image = global::WindowsFormsApp3.Properties.Resources.Cornmanthe3rd_Metronome_Communication_email_blue_512;
-            this.pictureBox9.Location = new System.Drawing.Point(61, 413);
+            this.pictureBox9.Location = new System.Drawing.Point(63, 378);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(160, 174);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -353,7 +357,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Gold;
             this.pictureBox8.Image = global::WindowsFormsApp3.Properties.Resources.Cornmanthe3rd_Metronome_Communication_email_blue_512;
-            this.pictureBox8.Location = new System.Drawing.Point(61, 168);
+            this.pictureBox8.Location = new System.Drawing.Point(63, 133);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(160, 174);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -365,7 +369,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Gold;
             this.pictureBox7.Image = global::WindowsFormsApp3.Properties.Resources.clipart402083;
-            this.pictureBox7.Location = new System.Drawing.Point(992, 421);
+            this.pictureBox7.Location = new System.Drawing.Point(994, 386);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(99, 90);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,7 +381,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Gold;
             this.pictureBox6.Image = global::WindowsFormsApp3.Properties.Resources._2f7g7slirsd0uljipghu6fi2ee;
-            this.pictureBox6.Location = new System.Drawing.Point(763, 430);
+            this.pictureBox6.Location = new System.Drawing.Point(765, 395);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(109, 81);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -388,7 +392,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Gold;
             this.pictureBox5.Image = global::WindowsFormsApp3.Properties.Resources.app_5105051;
-            this.pictureBox5.Location = new System.Drawing.Point(534, 428);
+            this.pictureBox5.Location = new System.Drawing.Point(536, 393);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(109, 81);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -400,7 +404,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Gold;
             this.pictureBox4.Image = global::WindowsFormsApp3.Properties.Resources.revenue__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(314, 432);
+            this.pictureBox4.Location = new System.Drawing.Point(316, 397);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(109, 81);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -411,7 +415,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Gold;
             this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.Cornmanthe3rd_Metronome_Communication_email_blue_512;
-            this.pictureBox3.Location = new System.Drawing.Point(967, 168);
+            this.pictureBox3.Location = new System.Drawing.Point(969, 133);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(160, 174);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -422,7 +426,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Gold;
             this.pictureBox2.Image = global::WindowsFormsApp3.Properties.Resources.cash_5632054;
-            this.pictureBox2.Location = new System.Drawing.Point(736, 168);
+            this.pictureBox2.Location = new System.Drawing.Point(738, 133);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(165, 180);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -434,7 +438,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Gold;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(370, 165);
+            this.pictureBox1.Location = new System.Drawing.Point(372, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 171);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -442,12 +446,54 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox10.Image = global::WindowsFormsApp3.Properties.Resources.revenue__1_;
+            this.pictureBox10.Location = new System.Drawing.Point(316, 538);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(109, 81);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 68;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Gold;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label12.Location = new System.Drawing.Point(279, 622);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(190, 23);
+            this.label12.TabIndex = 67;
+            this.label12.Text = "Danh sách người thuê";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Gold;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button12.Location = new System.Drawing.Point(260, 519);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(225, 135);
+            this.button12.TabIndex = 66;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // trangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1420, 680);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button11);
@@ -493,6 +539,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,5 +578,8 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button12;
     }
 }

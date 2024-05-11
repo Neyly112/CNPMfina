@@ -38,8 +38,8 @@ namespace WindowsFormsApp3
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            FormDieuChinhPhi formDieuChinhPhi = new FormDieuChinhPhi(ma);
-            formDieuChinhPhi.ShowDialog();
+            FormDSBP f = new FormDSBP(ma);
+            f.ShowDialog();
             this.Hide();
         }
 
@@ -83,21 +83,21 @@ namespace WindowsFormsApp3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormDieuChinhPhi formDieuChinhPhi = new FormDieuChinhPhi(ma);
-            formDieuChinhPhi.ShowDialog();
+            FormDSBP f = new FormDSBP(ma);
+            f.ShowDialog();
             this.Hide();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            FormDSPhongThue f = new FormDSPhongThue(ma);
+            FormDSPTCH f = new FormDSPTCH(ma);
             f.ShowDialog();
             this.Hide();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            FormDSPhongThue f = new FormDSPhongThue(ma);
+            FormDSPTCH f = new FormDSPTCH(ma);
             f.ShowDialog();
             this.Hide();
         }
@@ -106,6 +106,27 @@ namespace WindowsFormsApp3
         {
             FormDSHDCH f = new FormDSHDCH(ma);
             f.ShowDialog();
+            this.Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            FormDSNTCH formDSNTCH = new FormDSNTCH(ma);
+            formDSNTCH.ShowDialog();
+            this.Hide();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            FormDSNTCH formDSNTCH = new FormDSNTCH(ma);
+            formDSNTCH.ShowDialog();
+            this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            FormDSNTCH formDSNTCH = new FormDSNTCH(ma);
+            formDSNTCH.ShowDialog();
             this.Hide();
         }
     }

@@ -14,13 +14,15 @@ namespace WindowsFormsApp3
     public partial class FormDSBangPhi : Form
     {
         string ma;
-        string strSql = @"Data Source=MSI;Initial Catalog=QLCH1;Integrated Security=True";
+        ClassConnect c = new ClassConnect();
+        string strSql;
         SqlConnection sql = null;
 
         public FormDSBangPhi(string ma)
         {
             InitializeComponent();
             this.ma = ma;
+            strSql = c.SqlConect();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +56,16 @@ namespace WindowsFormsApp3
             FormDieuChinhPhi f = new FormDieuChinhPhi(ma);
             f.ShowDialog();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
