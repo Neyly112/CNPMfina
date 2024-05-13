@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BieuDoSoLuongNguoiThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BieuDoSoLuongNguoiThue.Designer.cs">
+      <DependentUpon>BieuDoSoLuongNguoiThue.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkCode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +204,12 @@
     <Compile Include="FormHDNT.Designer.cs">
       <DependentUpon>FormHDNT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHoTroKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoTroKhachHang.Designer.cs">
+      <DependentUpon>FormHoTroKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHuyHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +270,12 @@
     <Compile Include="FormXacNhanHoaDon.Designer.cs">
       <DependentUpon>FormXacNhanHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormYeuCauHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeuCauHoTro.Designer.cs">
+      <DependentUpon>FormYeuCauHoTro.cs</DependentUpon>
+    </Compile>
     <Compile Include="HopDong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -266,6 +285,7 @@
     <Compile Include="quenMK.Designer.cs">
       <DependentUpon>quenMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKeDoanhThu.cs" />
     <Compile Include="trangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +304,9 @@
     <Compile Include="trangchu3.Designer.cs">
       <DependentUpon>trangchu3.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BieuDoSoLuongNguoiThue.resx">
+      <DependentUpon>BieuDoSoLuongNguoiThue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="checkCode.resx">
       <DependentUpon>checkCode.cs</DependentUpon>
     </EmbeddedResource>
@@ -359,6 +382,9 @@
     <EmbeddedResource Include="FormHDNT.resx">
       <DependentUpon>FormHDNT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHoTroKhachHang.resx">
+      <DependentUpon>FormHoTroKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHuyHopDong.resx">
       <DependentUpon>FormHuyHopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -388,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormXacNhanHoaDon.resx">
       <DependentUpon>FormXacNhanHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeuCauHoTro.resx">
+      <DependentUpon>FormYeuCauHoTro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -584,6 +613,9 @@
       <Project>{7218dc02-9358-43f1-8dc9-2b9cdfe86b2d}</Project>
       <Name>DTO1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home_7133252.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -238,3 +238,6 @@ D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.For
 D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSXE.resources
 D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSXECH.resources
 D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormDSXENT.resources
+D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.BieuDoSoLuongNguoiThue.resources
+D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormHoTroKhachHang.resources
+D:\Bai Tap\github1\CNPMfina\Main\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FormYeuCauHoTro.resources

@@ -50,7 +50,9 @@ namespace WindowsFormsApp3
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormHoTroKhachHang f = new FormHoTroKhachHang(ma);
+            f.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -146,12 +148,7 @@ namespace WindowsFormsApp3
             f.ShowDialog();
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormDSBangPhi f = new FormDSBangPhi(ma);
-            f.ShowDialog();
-        }
+        
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
@@ -253,6 +250,30 @@ namespace WindowsFormsApp3
             this.Hide();
             FormDSXE formDSXE = new FormDSXE(ma);
             formDSXE.ShowDialog();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHoTroKhachHang f = new FormHoTroKhachHang(ma);
+            f.ShowDialog();
+        }
+
+        private void pictureBox8_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox8_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDSBangPhi f = new FormDSBangPhi(ma);
+            f.ShowDialog();
         }
     }
 }

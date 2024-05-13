@@ -122,5 +122,24 @@ namespace WindowsFormsApp3
             FormDSXENT formDSXENT = new FormDSXENT(ma);
             formDSXENT.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormYeuCauHoTro f = new FormYeuCauHoTro(ma);
+            f.ShowDialog();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormYeuCauHoTro f = new FormYeuCauHoTro(ma);
+            f.ShowDialog();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

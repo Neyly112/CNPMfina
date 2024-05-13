@@ -208,6 +208,24 @@ CREATE TABLE Nuoc
   MaHoaDon VARCHAR(50) NOT NULL,
   FOREIGN KEY (MaHoaDon) REFERENCES Hoa_don(MaHoaDon)
 )
+
+go
+CREATE TABLE Tin_nhan (
+    Sender NVARCHAR(50),
+    Receiver NVARCHAR(50),
+    Content NVARCHAR(255),
+    SentDateTime VARCHAR(255),
+    ReadStatus INTEGER DEFAULT 0 -- 0: unread, 1: read
+);
+go
+CREATE TABLE Thong_ke (
+	thang varchar(10),
+	so_nguoi_thue varchar(256),
+	so_phong_con_trong varchar(256),
+	so_nguoi_chua_thanh_toan varchar(256),
+	tong_thanh_toan varchar(256)
+)
+go
 CREATE TABLE Tien_xe
 (
   soLuongXe INT NOT NULL check(soLuongXe > 0) ,
@@ -522,3 +540,5 @@ select * from Phong_cho_thue
 update Phong_cho_thue set TrangThaiPhong = N'Đã thuê' where MaPhong = 'P002'
 select * from Chu_ho
 select * from Dang_ki_xe
+select * from Tin_nhan
+select * from Thong_ke
