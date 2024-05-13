@@ -8,14 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-#pragma warning disable CS0105 // Using directive appeared previously in this namespace
+#pragma warning disable CS0105 
 using System.Data.SqlClient;
-#pragma warning restore CS0105 // Using directive appeared previously in this namespace
+#pragma warning restore CS0105 
 namespace WindowsFormsApp3
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
-        string ma;
         public Form1()
         {
             InitializeComponent();
@@ -129,10 +128,9 @@ namespace WindowsFormsApp3
 
         static void CloseAllForms()
         {
-            // Lấy danh sách tất cả các Form đang mở
+          
             Form[] openForms = Application.OpenForms.Cast<Form>().ToArray();
 
-            // Đóng tất cả các Form
             foreach (System.Windows.Forms.Form form in openForms)
             {
                 form.Close();

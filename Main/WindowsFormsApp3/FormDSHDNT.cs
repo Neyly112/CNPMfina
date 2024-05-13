@@ -63,5 +63,10 @@ namespace WindowsFormsApp3
             t.ShowDialog();
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

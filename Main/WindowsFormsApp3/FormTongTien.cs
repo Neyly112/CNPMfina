@@ -16,7 +16,7 @@ namespace WindowsFormsApp3
         ClassConnect c = new ClassConnect();
         string strSql;
         SqlConnection sql = null;
-
+        string ma;
         string maCanHo;
         double tongTienNuoc;
         double tongTienDien;
@@ -31,9 +31,10 @@ namespace WindowsFormsApp3
         int xeMay;
         int xeDap;
         int xeDuoi15Tan;
-        public FormTongTien(string maCanHo, double tongTienNuoc, double tongTienDien, double phiSinhHoat, double tongTien, string maBangPhi, string ngayLap, double so_m3, double soKwh, int xeMay, int xeDap, int xeDuoi15Tan, double tongTienXe)
+        public FormTongTien(string ma, string maCanHo, double tongTienNuoc, double tongTienDien, double phiSinhHoat, double tongTien, string maBangPhi, string ngayLap, double so_m3, double soKwh, int xeMay, int xeDap, int xeDuoi15Tan, double tongTienXe)
         {
             InitializeComponent();
+            this.ma = ma;
             this.maCanHo = maCanHo;
             this.tongTienNuoc = tongTienNuoc;
             this.tongTienDien = tongTienDien;
@@ -112,7 +113,7 @@ namespace WindowsFormsApp3
             int kq = sqlCm.ExecuteNonQuery();
             if (kq > 0)
             {
-                MessageBox.Show("thanh cong");
+                MessageBox.Show("Đã lưu");
             }
             else
             {
@@ -178,6 +179,13 @@ namespace WindowsFormsApp3
             funcAddDien(soKwh, tongTienDien);
             funcAddNuoc(so_m3, tongTienNuoc);
             funcAddTienXe(tongTienXe);
+            this.Hide();
+            FormDSHDQL f = new FormDSHDQL(ma);
+            f.ShowDialog();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
 
         }
     }

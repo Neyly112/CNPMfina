@@ -54,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(237, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 3;
             // 
             // label2
@@ -64,7 +64,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.Location = new System.Drawing.Point(158, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 46);
+            this.label2.Size = new System.Drawing.Size(133, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "ĐĂNG NHẬP";
             // 
@@ -106,7 +106,7 @@
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(265, 396);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 19);
+            this.label3.Size = new System.Drawing.Size(105, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Quên mật khẩu";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -118,7 +118,7 @@
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label4.Location = new System.Drawing.Point(205, 497);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 18);
+            this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 5;
             this.label4.Text = "Thoát";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -209,7 +209,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(461, 556);

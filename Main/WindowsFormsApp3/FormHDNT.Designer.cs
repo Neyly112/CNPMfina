@@ -174,6 +174,7 @@
             this.Controls.Add(this.lbTenPhong);
             this.Name = "FormHDNT";
             this.Text = "FormHDNT";
+            this.Load += new System.EventHandler(this.FormHDNT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

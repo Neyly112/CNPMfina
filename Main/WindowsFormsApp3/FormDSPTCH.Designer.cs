@@ -54,6 +54,7 @@
             this.label1.Size = new System.Drawing.Size(424, 49);
             this.label1.TabIndex = 16;
             this.label1.Text = "Danh Sách Phòng Thuê";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 

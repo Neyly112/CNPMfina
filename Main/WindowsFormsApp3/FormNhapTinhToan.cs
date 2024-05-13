@@ -82,15 +82,15 @@ namespace WindowsFormsApp3
 
             for (int i = 0; i < countXe; i++)
             {
-                if (xe[i] == "xe may")
+                if (xe[i] == "xe máy")
                 {
                     xeMay++;
                 }
-                else if (xe[i] == "xe dap")
+                else if (xe[i] == "xe đạp")
                 {
                     xeDap++;
                 }
-                else if (xe[i] == "xe duoi 1,5 tan")
+                else if (xe[i] == "xe dưới 1,5 tấn")
                 {
                     xe_duoi_1_5_tan++;
                 }
@@ -144,11 +144,11 @@ namespace WindowsFormsApp3
                 tongTien = so_m3 * phiNuoc + phiSinhHoatt + soKwh * phiDien + tongTienXe;
                 maBangPhi = reader.GetString(6);
 
-                FormTongTien f = new FormTongTien(maCanHo, tongTienNuoc, tongTienDien, phiSinhHoatt, tongTien, maBangPhi, ngayBatDau.Text.Trim(), so_m3, soKwh, xeMay, xeDap, xe_duoi_1_5_tan, tongTienXe);
+                FormTongTien f = new FormTongTien(ma, maCanHo, tongTienNuoc, tongTienDien, phiSinhHoatt, tongTien, maBangPhi, ngayBatDau.Text.Trim(), so_m3, soKwh, xeMay, xeDap, xe_duoi_1_5_tan, tongTienXe);
                 f.ShowDialog();
 
             }
-
+            reader.Close();
         }
         private void ngayBatDau_ValueChanged(object sender, EventArgs e)
         {

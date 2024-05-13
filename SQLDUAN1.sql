@@ -78,7 +78,7 @@ go
 
 -- Insert data into Dang_ki_xe (Vehicle Registration) table
 INSERT INTO Dang_ki_xe (Ngay_dang_ki, bien_so, loai_xe, MaNguoiThue)
-VALUES ('2023-12-31', 'ABC-123', N'xe máy', 'NT001');
+VALUES ('2023-12-31', 'ABC-123', N'xe máy', 'NT001')
 go
 
 
@@ -215,6 +215,8 @@ CREATE TABLE Tien_xe
   MaHoaDon VARCHAR(50) NOT NULL,
   FOREIGN KEY (MaHoaDon) REFERENCES Hoa_don(MaHoaDon)
 )
+go
+insert into Tien_xe values(1, 20.00, 'HD001')
 go
 CREATE FUNCTION getTopMaHoaDonn() 
 RETURNS VARCHAR(10)
@@ -519,3 +521,4 @@ select * from Quan_li
 select * from Phong_cho_thue
 update Phong_cho_thue set TrangThaiPhong = N'Đã thuê' where MaPhong = 'P002'
 select * from Chu_ho
+select * from Dang_ki_xe

@@ -35,9 +35,10 @@ namespace WindowsFormsApp3
             string ngayKT = Convert.ToString(row.Cells["NgayKetThuc"].Value);
             string soNg = Convert.ToString(row.Cells["SoNguoiO"].Value);
             string maNguoiThue = Convert.ToString(row.Cells["MaNguoiThue"].Value);
+            this.Hide();
             FormXacNhanHD f = new FormXacNhanHD(ma, maPhong, soNg, ngayBD, ngayKT, maNguoiThue, maHD);
             f.ShowDialog();
-            this.Hide();
+            
         }
 
         private void FormDSHDCH_Load(object sender, EventArgs e)

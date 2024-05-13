@@ -53,6 +53,18 @@
       <DependentUpon>checkCode.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassConnect.cs" />
+    <Compile Include="FormDanhSachHoaDonNguoiThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanhSachHoaDonNguoiThue.Designer.cs">
+      <DependentUpon>FormDanhSachHoaDonNguoiThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDanhSachHoaChuHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanhSachHoaChuHo.Designer.cs">
+      <DependentUpon>FormDanhSachHoaChuHo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,12 @@
     <Compile Include="FormDSHDNT.Designer.cs">
       <DependentUpon>FormDSHDNT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDSHDQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSHDQL.Designer.cs">
+      <DependentUpon>FormDSHDQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDSNT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +166,24 @@
     </Compile>
     <Compile Include="FormDSPTCH.Designer.cs">
       <DependentUpon>FormDSPTCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSXE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSXE.Designer.cs">
+      <DependentUpon>FormDSXE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSXECH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSXECH.Designer.cs">
+      <DependentUpon>FormDSXECH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSXENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSXENT.Designer.cs">
+      <DependentUpon>FormDSXENT.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGiaHanHD.cs">
       <SubType>Form</SubType>
@@ -215,6 +251,12 @@
     <Compile Include="FormXacNhanHD.Designer.cs">
       <DependentUpon>FormXacNhanHD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormXacNhanHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXacNhanHoaDon.Designer.cs">
+      <DependentUpon>FormXacNhanHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="HopDong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -244,6 +286,12 @@
     </Compile>
     <EmbeddedResource Include="checkCode.resx">
       <DependentUpon>checkCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanhSachHoaDonNguoiThue.resx">
+      <DependentUpon>FormDanhSachHoaDonNguoiThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanhSachHoaChuHo.resx">
+      <DependentUpon>FormDanhSachHoaChuHo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -281,6 +329,9 @@
     <EmbeddedResource Include="FormDSHDNT.resx">
       <DependentUpon>FormDSHDNT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDSHDQL.resx">
+      <DependentUpon>FormDSHDQL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDSNT.resx">
       <DependentUpon>FormDSNT.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +343,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDSPTCH.resx">
       <DependentUpon>FormDSPTCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSXE.resx">
+      <DependentUpon>FormDSXE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSXECH.resx">
+      <DependentUpon>FormDSXECH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSXENT.resx">
+      <DependentUpon>FormDSXENT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiaHanHD.resx">
       <DependentUpon>FormGiaHanHD.cs</DependentUpon>
@@ -325,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormXacNhanHD.resx">
       <DependentUpon>FormXacNhanHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXacNhanHoaDon.resx">
+      <DependentUpon>FormXacNhanHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
