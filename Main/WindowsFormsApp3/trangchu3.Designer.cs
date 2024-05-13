@@ -115,9 +115,9 @@
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label3.Location = new System.Drawing.Point(941, 384);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 23);
+            this.label3.Size = new System.Drawing.Size(167, 23);
             this.label3.TabIndex = 52;
-            this.label3.Text = "Tìm kiếm giao dịch";
+            this.label3.Text = "Danh sách hóa đơn";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
@@ -268,7 +268,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Gold;
-            this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.find_magnifier_magnifying_magnifying_glass_research_science_1320196166740595433;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(955, 209);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
